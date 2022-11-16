@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from '../developer-portfolio/src/components/Header';
+import Footer from '../developer-portfolio/src/components/Footer';
 
 function App() {
     return (

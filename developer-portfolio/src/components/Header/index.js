@@ -26,10 +26,11 @@ function Portfolio () {
     <div>
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
       <div>
-      {
+      {/* {
         // Render the component returned by 'renderPage()'
         renderPage()
-      }
+      } */}
+      <Contact></Contact>
     </div>
     </div>
   );

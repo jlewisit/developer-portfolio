@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helper';
-import { Row, Col } from 'react-bootstrap';
+import { useForm } from "react-hook-form";
+// import { Row, Col } from 'react-bootstrap';
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm("xknyyydk");
+  const {state, handleSubmit} = useForm();
   const [formState, setFormState] = useState(
     {
       name: '',
@@ -80,4 +81,4 @@ function ContactForm() {
     );
 }
 
-export default Contact
+export default ContactForm

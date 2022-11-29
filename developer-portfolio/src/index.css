@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar, .navbar-brand {
+  text-align: center;
+  display: block;
+  width: 10%;
+  background-color: beige;
+}
+
+div.navbar-brand {
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+
+main {
+  margin: 15%;
+}
+
+.label {
+  text-align: left;
+}
+
+.column {
+  margin: 7%;
+}
+
+footer.footer {
+  background-color: beige;
+}
+
+@media only screen and (max-width: 586px) {
+  main {
+    margin: 2em;
+  }
+}

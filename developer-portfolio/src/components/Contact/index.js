@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helper';
 import { useForm } from "react-hook-form";
-// import { Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 function ContactForm() {
-  const {state, handleSubmit} = useForm();
+  // const {state, handleSubmit} = useForm();
   const [formState, setFormState] = useState(
     {
       name: '',
@@ -22,14 +22,19 @@ function ContactForm() {
       window.location.reload(false);
     };
 
-    if (state.succeeded) {
-      return (
-        <div>
-          <p>Thank you for your inquiry</p>
-          <button onClick={pageReload}>Submit Inquiry</button>
-        </div>
-      );
-    }
+    // if (state.succeeded) {
+    // }
+
+const handleSubmit = (e) => {
+  e.preventDefault()
+    console.log(formState)
+    return (
+      <div>
+        <p>Thank you for your inquiry</p>
+        <button onClick={pageReload}>Submit Inquiry</button>
+      </div>
+    );
+}
 
     const handleChange = (e) => {
       if (e.target.name === 'email') {
@@ -76,6 +81,7 @@ function ContactForm() {
               <p>{errorMessage}</p>
             </div>
           )}          
+          <button type="submit">Submit</button>
         </form>
       </div>
     );
